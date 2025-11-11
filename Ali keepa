@@ -1,0 +1,17 @@
+  // pages/ProductFinder.tsx
+  import React, { useState } from 'react';
+
+  const ProductFinder: React.FC = () => {
+    const [filters, setFilters] = useState({ priceMin: 0, rankMax: 1000 });
+    const handleSearch = () => {
+      // API call to /search with filters
+    };
+    return (
+      <div>
+        <input placeholder="Keywords" />
+        <button onClick={handleSearch}>Search</button>
+        {/* Render results table */}
+      </div>
+    );
+  };
+  
